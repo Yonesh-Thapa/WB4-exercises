@@ -37,7 +37,7 @@ Fee: "50.00",
 ];
 // let javascript = "PROG200"
 
-function findCourse(){
+function findCourse(id){
     numOfCourse = courses.length;
     for(i = 0; i < numOfCourse; i++){
         let course = courses[i];
