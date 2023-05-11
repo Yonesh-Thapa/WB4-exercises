@@ -32,10 +32,10 @@ function getMedian(median){
     })
     let medianNumber;
     if (numNumbers % 2 != 0){
-        medianNumber = median[Math.round(numNumbers/2)];
+        medianNumber = median[Math.round(numNumbers/2) -1];
     }
     else{
-        medianNumber = ((median[(numNumbers/2)]) + (median[(numNumbers/2) + 1])) / 2;
+        medianNumber = ((median[(numNumbers/2) - 1]) + (median[(numNumbers/2)])) / 2;
     }
     console.log(`The median number is ${medianNumber}`)
 }
