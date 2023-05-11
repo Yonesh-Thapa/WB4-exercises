@@ -31,11 +31,12 @@ function getMedian(median){
         else return 1;
     })
     let medianNumber;
+    let position = numNumbers / 2;
     if (numNumbers % 2 != 0){
-        medianNumber = median[Math.round(numNumbers/2) -1];
+        medianNumber = median[Math.round(position) -1];
     }
     else{
-        medianNumber = ((median[(numNumbers/2) - 1]) + (median[(numNumbers/2)])) / 2;
+        medianNumber = ((median[position - 1]) + (median[position])) / 2;
     }
     console.log(`The median number is ${medianNumber}`)
 }
@@ -48,3 +49,4 @@ let test1 = [80, 83, 86, 92, 100];
 let test2 = [80, 83, 86, 87, 92, 100];
 getMedian(test1);
 getMedian(test2);
+
